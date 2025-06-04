@@ -1,0 +1,35 @@
+body {
+  background-color: blueviolet;
+}
+h1 {
+  color: yellow;
+  background-color: black;
+  font-size: 40px;
+}
+h2 {
+  /* color: red; */
+  background-color: gray;
+}
+h3 {
+  /* color: red; */
+  background-color: burlywood;
+}
+h4 {
+  /* color: red; */
+  background-color: darkgrey;
+}
+
+/* DRY - don't repeat yourself */
+
+/* ctrl + / */
+
+h1,
+h2,
+h3,
+h4 {
+  color: red;
+}
+
+h1 {
+  color: white;
+}

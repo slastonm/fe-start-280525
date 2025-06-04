@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        background-color: blue;
+        color: yellow;
+        font-size: 30px;
+      }
+      p {
+        background-color: gold;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: blue; background-color: yellow">Form elements</h1>
+    <h2>CSS -cascad style sheets</h2>
+    <form>
+      <div>
+        <label for="username"> User name </label>
+
+        <input placeholder="Type user name" type="text" id="username" />
+        <p>Type your user name value</p>
+      </div>
+
+      <div>
+        <label for="userpassword"> User password </label>
+
+        <input type="password" disabled id="userpassword" />
+      </div>
+      <div>
+        <label for="skill">Skill select</label>
+        <select id="skill">
+          <option value="01">I know Git</option>
+          <option value="02">I know HTML</option>
+          <option disabled value="03">I know CSS</option>
+          <option disabled value="04">I know JS</option>
+        </select>
+      </div>
+      <h4 style="color: blue; background-color: yellow">Comments</h4>
+      <div>
+        <label for="coment">Type comment text</label>
+        <textarea cols="30" rows="10" id="coment" disabled></textarea>
+      </div>
+      <h4 style="color: rgb(223, 13, 122); background-color: rgb(10, 10, 9)">
+        Radio button
+      </h4>
+      <div>
+        <label for="ukrpost">Ukr post</label
+        ><input type="radio" name="delivery" id="ukrpost" />
+        <label for="novapost">Nova post</label
+        ><input type="radio" name="delivery" id="novapost" />
+        <label for="selfDelivery">Self delivery</label
+        ><input disabled type="radio" name="delivery" id="selfDelivery" />
+      </div>
+      <h4>Multi select checkbox</h4>
+      <div>
+        <label for="car">Car</label
+        ><input type="checkbox" name="vehicle1" id="car" />
+        <label for="tram">tram</label
+        ><input type="checkbox" name="vehicle2" id="tram" />
+        <label for="bike">bike</label
+        ><input type="checkbox" name="vehicle3" id="bike" />
+      </div>
+      <input type="reset" value="Reset form" />
+    </form>
+    <button>Button press me</button>
+
+    <h3>Link new skill</h3>
+    <!-- <a href="http://127.0.0.1:5500/03/next.html" target="_blank">Page 2</a>  Це помилка !!!!!!-->
+    <a href="next.html" target="_blank">Next page Corect option</a>
+    <h4>Black friday</h4>
+    <a href="sale/blackfriday.html" target="_blank">Sale</a>
+    <div>
+      <!-- .png .jpeg .jpg .wep .svg -->
+      <img src="img/smile.png" alt="img not found" />
+      <img src="img/smile.png" alt="smile face" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit
+      reiciendis rerum, libero aliquid maiores magnam, magni ab natus
+      exercitationem enim repudiandae dolore officiis. Numquam repellat
+      veritatis consectetur debitis saepe!
+    </p>
+    <audio controls>
+      <source src="mp3/file_MP3.mp3" />
+    </audio>
+    <div>
+      <video controls>
+        <source src="mp4/file_example_MP4.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <iframe
+      src="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+      width="800"
+      height="1000"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3mQzvZi5Vyo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
