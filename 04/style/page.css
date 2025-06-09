@@ -1,0 +1,88 @@
+.article-title.font-size-xl {
+  background-color: palevioletred;
+  font-size: 30px;
+}
+.article-title {
+  background-color: black;
+  color: white;
+}
+/* h3 {
+  background-color: black;
+  color: white;
+} */
+
+#test {
+  background-color: red;
+}
+
+.test-block {
+  background-color: purple;
+  color: white;
+}
+
+h3 {
+  background-color: rgb(25, 179, 11);
+}
+
+.menu-item {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  margin-bottom: 10px;
+}
+.menu-item.active {
+  background-color: orange;
+}
+.menu-item:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+.menu-item p {
+  background-color: gray;
+  color: darkgreen;
+}
+
+p {
+  background-color: yellow;
+  font-size: 20px;
+}
+
+/* p span {
+  color: white;
+} */
+
+.menu-item.active p {
+  color: darkblue;
+}
+
+.menu-item span {
+  color: black;
+}
+
+.menu-item.active span {
+  color: yellow;
+}
+body ul li:last-child {
+  background-color: rgb(5, 5, 5);
+  color: rgb(165, 231, 10);
+}
+ul li:first-child {
+  background-color: blue;
+  color: rgb(165, 231, 10);
+}
+
+ul li:nth-child(4) {
+  background-color: rgb(5, 148, 14);
+  color: rgb(15, 15, 14);
+}
+
+ul li:nth-child(3) {
+  background-color: rgb(210, 5, 162);
+  color: rgb(15, 15, 14);
+}
+input[type="text"] {
+  background-color: green;
+}
+a[href="home.html"] {
+  font-size: 30px;
+}

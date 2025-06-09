@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: palevioletred;
+}
+.size-block {
+  background-color: yellow;
+  /* width: 100%; */
+  width: 310px;
+  /* height: auto; */
+  height: 150px;
+
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  /* box-sizing: content-box; */
+  margin-top: 50px;
+  /* якщо є вказана ширина працює auto */
+  /* margin-right: 50px; */
+  margin-right: auto;
+  margin-bottom: 100px;
+  /* margin-left: 850px; */
+  margin-left: auto;
+}
+
+section {
+  border: 10px solid black;
+  border-radius: 50px;
+  /* border-top-left-radius: 150px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 50px; */
+  background-color: white;
+  width: 360px;
+  /* padding-top: 50px;
+  padding-right: 18px;
+  padding-bottom: 100px;
+  padding-left: 15px; */
+
+  padding: 50px 18px 100px 15px;
+  /* padding: 50px 18px; */
+  /* padding: 50px; */
+  /* margin: 50px auto 100px auto; */
+  margin: 50px auto;
+  margin: auto;
+}
+
+section h2 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+section form {
+  margin-left: 15px;
+}
+nav {
+  background-color: yellow;
+  width: 750px;
+  padding: 50px;
+  margin: 0 auto;
+}
+nav a {
+  width: 150px;
+  height: 100px;
+  /* display: block; */
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
