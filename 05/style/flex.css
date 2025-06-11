@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+.d-flex-inline {
+  display: inline-flex;
+  background-color: blue;
+}
+.d-flex {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  border: 2px solid black;
+  /* flex-flow: column wrap; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* height: 500px; */
+  row-gap: 39px;
+  column-gap: 50px;
+}
+.item {
+  padding: 30px;
+  background-color: gray;
+  color: white;
+  width: 450px;
+  /* width: 450px; */
+  /* margin-right: 39px; */
+}
+/* .item:last-child {
+  margin-right: 0;
+} */
+.item:nth-child(2) {
+  background-color: orange;
+  /* height: 300px; */
+}
+.item:nth-child(3) {
+  background-color: rgb(13, 130, 194);
+  /* height: 200px; */
+}
+.item:nth-child(4) {
+  background-color: rgb(79, 8, 209);
+}
+.item:nth-child(5) {
+  background-color: rgb(233, 11, 215);
+}
+.item:nth-child(6) {
+  background-color: rgb(6, 242, 61);
+}
+.item:nth-child(7) {
+  background-color: rgb(5, 145, 45);
+}

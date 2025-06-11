@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
+
+body {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alumni-sans-sc {
+  font-family: "Alumni Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .edu-nsw-act-cursive-400 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+.edu-nsw-act-cursive-700 {
+  /* font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto; */
+  font-weight: 700;
+  /* font-style: normal; */
+}
+
+h1 {
+  font-size: 34px;
+  color: red;
+  /* margin: 0; */
+}
+h1 i {
+  color: black;
+  font-size: 40px;
+}
+p {
+  font-size: 24px;
+  /* margin-bottom: 0; */
+  color: green;
+}
+.inl-block {
+  display: inline-block;
+  background-color: rebeccapurple;
+  padding: 20px;
+}
