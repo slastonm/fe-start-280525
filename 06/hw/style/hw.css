@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background: rgb(247, 179, 179);
+}
+.menu {
+  width: 360px;
+  padding: 62px 24px 90px 24px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  margin: 50px auto;
+}
+.menu__button {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.menu__button:hover {
+  background-color: black;
+  border-radius: 3px;
+}
+.menu__button:hover i {
+  color: white;
+}
+.menu__button i {
+  font-size: 30px;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  /* text-align: left; */
+  /* text-align: center; */
+  /* text-align: right; */
+  margin-top: 23px;
+  margin-bottom: 17px;
+  letter-spacing: 0px;
+}
+form {
+  margin-bottom: 29px;
+}
+input {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+  display: block;
+  width: 316px;
+  height: 44px;
+  border: 1px solid rgb(239, 239, 239);
+}
+.food-row {
+  display: flex;
+  column-gap: 24px;
+}
+.food-item {
+  text-align: center;
+  /* text-align: inherit; */
+  /* border: 2px solid red; */
+}
+
+.food-item-bg {
+  width: 74px;
+  height: 74px;
+  padding-top: 19px;
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+}
+.food-item h4 {
+  color: rgb(196, 196, 196);
+}
+/* .food-item-bg:hover {
+  background: rgb(234, 226, 183);
+} */
+
+.food-item:hover .food-item-bg {
+  background: rgb(234, 226, 183);
+}
+.food-item:hover img {
+  rotate: 45deg;
+}
+.food-item:hover h4 {
+  color: black;
+}
+h3 {
+  margin-top: 32px;
+  margin-bottom: 26px;
+  color: rgb(0, 48, 73);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+/* .burger-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+} */
+.burger-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgb(230, 230, 230);
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  margin-bottom: 24px;
+}
+.burger-card:last-child {
+  margin-bottom: 0;
+}
+.text-info {
+  padding: 8px 12px;
+}
+.text-info h4 {
+  color: rgb(0, 48, 73);
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+.text-info h5 {
+  color: rgb(214, 40, 40);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
