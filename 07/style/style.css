@@ -1,0 +1,114 @@
+/* Стилі для background.html */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.simple-bg {
+  width: 1500px;
+  height: 1500px;
+  border: 2px solid red;
+  /* border-radius: 100%; */
+  margin: 100px auto;
+  /* overflow: hidden; */
+  /* background: ; */
+  /* background-image: url("../img/avatar.png"); */
+  /* background-image: url("../img/avatar.png"), url("../img/1.webp"); */
+  background-image: url("../img/bg.jpeg");
+
+  background-repeat: no-repeat;
+  /* background-repeat: repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-size: 200px; */
+  /* background-position: top left; */
+  /* background-position: top right; */
+  /* background-position: bottom right; */
+  background-position: top center;
+  /* background-position: center center; */
+  /* background-position: center; */
+  /* background-position: top 150px left 250px; */
+  /* padding: 100px; */
+  background-color: yellow;
+  /* background-size: contain; */
+  /* background-size: cover; */
+  background-size: 100%;
+}
+/* .simple-bg:hover {
+  background-color: orange;
+} */
+.text-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  margin: 100px auto;
+  font-size: 25px;
+  /* overflow: hidden; */
+  /* overflow: auto; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* parallax */
+body {
+  height: 100%;
+}
+.parallax {
+  padding-top: 200px;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header,
+section {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  position: relative;
+}
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  margin-right: 15px;
+  background-color: rgb(222, 119, 9);
+}
+h1:hover::before {
+  background-color: black;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: black;
+}
+/* .fa-star {
+  color: yellow;
+} */
+.fa-solid.fa-star {
+  color: yellow;
+}
+.fa-regular.fa-star {
+  color: white;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  color: white;
+}
+.arrow:hover {
+  border: 2px solid rgb(90, 88, 88);
+  color: rgb(79, 78, 78);
+}
