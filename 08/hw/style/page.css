@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  background-image: url("../img/bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #0e1118;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.big-shoulders-stencil {
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.input-my {
+  background-color: gray;
+  color: white;
+  font-weight: 500;
+}
+.input-my::placeholder {
+  color: orange;
+  font-weight: bold;
+}
+header {
+  padding: 42px 42px 118px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
+.logo-block,
+.user-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-block span {
+  display: inline-block;
+  padding-left: 42px;
+  color: white;
+  color: rgb(200, 200, 200);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  position: relative;
+}
+.logo-block span::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 28px;
+  background-color: white;
+  position: absolute;
+  left: 22px;
+}
+.user-block {
+  justify-content: flex-end;
+  column-gap: 45px;
+}
+.user-block button {
+  font-size: 35px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.user-block button:hover {
+  color: yellow;
+}
+
+.user-pic {
+  width: 74px;
+  height: 74px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.user-pic img {
+  width: 100%;
+}
+main {
+  padding-left: 80px;
+  /* width: 989px; */
+  /* max-width: 989px; */
+  width: 52%;
+}
+button {
+}
+
+.janr {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  margin-bottom: 60px;
+}
+.janr span {
+  display: inline-block;
+  margin-left: 18px;
+  padding-left: 18px;
+  border-left: 2px solid white;
+}
+.janr span:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 77px;
+  letter-spacing: 5.5px;
+  margin-bottom: 17px;
+}
+.film-info {
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+  display: flex;
+  column-gap: 46px;
+}
+.film-info div {
+  /* padding-left: 46px; */
+  position: relative;
+}
+.film-info div::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 28px;
+  background-color: white;
+  position: absolute;
+  left: -22px;
+}
+.film-info div:first-child::before {
+  /* display: none; */
+  width: 0;
+  left: 0;
+}
+.film-info span {
+  color: rgb(167, 166, 166);
+}
+.desprition {
+  color: rgb(167, 166, 166);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 20px 0 45px 0;
+}
+.rating {
+  display: flex;
+  column-gap: 15px;
+  font-size: 32px;
+  color: white;
+}
+.rating i {
+  display: inline-block;
+}
+.fa-solid.fa-star {
+  color: yellow;
+}
+.rating i:hover {
+  color: yellow;
+}
+.button-block {
+  display: flex;
+  column-gap: 50px;
+  padding: 54px 0;
+}
+.button-block button {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 141.52%;
+  text-align: left;
+  background: transparent;
+  padding: 16px;
+  min-width: 258px;
+  text-align: center;
+}
+.button-block button:hover {
+  background-color: red;
+  border-color: red;
+}
+.slider-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.slider-top h3 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 144.52%;
+  letter-spacing: 5px;
+}
+.controls {
+  display: flex;
+  column-gap: 24px;
+  padding-bottom: 20px;
+}
+.controls button {
+  width: 41px;
+  height: 41px;
+  font-size: 18px;
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.controls button:hover {
+  color: rgb(167, 166, 166);
+  border: 1.5px solid rgb(167, 166, 166);
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider img {
+  width: 18.4%;
+}
+.age-info {
+  position: fixed;
+  bottom: 103px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.49);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 141.52%;
+  padding: 15px 66px 15px 26px;
+  border-left: 33px solid rgb(213, 13, 31);
+}

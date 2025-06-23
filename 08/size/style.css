@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 16px; */
+  /* font-size: наприклад browser; */
+}
+body {
+  /* font-size: 20px; */
+}
+h1 {
+  padding: 2rem;
+  /* font-size: 3rem; */
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+p {
+  margin: 2rem;
+  /* font-size: 2rem; */
+  font-size: 16px;
+  /* 100px */
+}
+
+div {
+  /* font-size: 150px; */
+}
