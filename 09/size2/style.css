@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* min-height: 100%; */
+}
+section {
+  /* width: 100%; */
+  background-color: blue;
+  /* display: flex; */
+  /* height: 100%; */
+  min-height: 100vh;
+  /* width: 50vw; */
+}
+section:nth-child(2) {
+  background-color: yellow;
+  /* width: 50%; */
+}
+section:nth-child(3) {
+  background-color: lightblue;
+}
+h1,
+h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 6vw;
+}
+p {
+  font-size: 50px;
+}
+.parent {
+  width: 80%;
+  border: 20px solid black;
+  margin: 50px auto;
+}
+.vieport {
+  width: 50vw;
+  background-color: brown;
+  color: white;
+}
+.percentage {
+  width: 50%;
+  background-color: gray;
+  color: white;
+}
+
+/* media query */
+
+/* @media screen and (max-width: 1600px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  section:nth-child(3) {
+    background-color: rgb(50, 3, 143);
+  }
+}
+
+@media (max-width: 1200px) {
+  h1,
+  h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+  }
+  section:nth-child(3) {
+    background-color: rgb(29, 3, 80);
+  }
+}
+
+@media (max-width: 800px) {
+  h1,
+  h2 {
+    font-size: 52px;
+  }
+  section:nth-child(3) {
+    background-color: rgb(231, 89, 6);
+  }
+} */
+
+/* @media screen and (min-width: 600px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  section:nth-child(3) {
+    background-color: rgb(50, 3, 143);
+  }
+} */
+
+/* @media screen and (min-width: 809px) and (max-width: 1081px) {
+  section {
+    display: none;
+  }
+  body {
+    min-height: 100vh;
+    padding: 50vh;
+    background-color: rgb(132, 2, 2);
+  }
+  body::before {
+    content: "Hello Ipad";
+    display: block;
+    font-size: 8vw;
+    text-align: center;
+    color: white;
+  }
+} */
+/* @media (809px <= width <= 1081px) {
+  section {
+    display: none;
+  }
+  body {
+    min-height: 100vh;
+    padding: 50vh;
+    background-color: rgb(4, 136, 50);
+  }
+  body::before {
+    content: "Hello Ipad";
+    display: block;
+    font-size: 8vw;
+    text-align: center;
+    color: white;
+  }
+} */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: black;
+}
+header a {
+  color: white;
+}
+header button {
+  display: none;
+  padding: 3rem;
+  font-size: 2rem;
+  margin-right: 5rem;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+  header button {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* h1,
+  h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+  }
+  section:nth-child(3) {
+    background-color: rgb(29, 3, 80);
+  } */
+  section {
+    display: none;
+  }
+  body {
+    min-height: 100vh;
+    padding: 50vh;
+    background-color: black;
+  }
+  body::before {
+    content: "Download mobile app";
+    display: block;
+    font-size: 8vw;
+    text-align: center;
+    color: white;
+  }
+}
+/* 
+@media (min-width: 1600px) {
+  h1,
+  h2 {
+    font-size: 6vw;
+  }
+  section:nth-child(3) {
+    background-color: rgb(231, 89, 6);
+  }
+} */
+
+/* @media print {
+  body {
+    background-color: white;
+  }
+  body::after {
+    content: "Print version";
+    color: black;
+    text-decoration: underline;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+  }
+  section {
+    display: none;
+  }
+  section:nth-child(3) {
+    display: block;
+  }
+} */
