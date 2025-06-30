@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes example {
+  from {
+    background-color: blue;
+    border-radius: 0;
+    left: 0;
+  }
+  to {
+    background-color: yellow;
+    border-radius: 100%;
+    left: 500px;
+  }
+}
+@keyframes pro {
+  0% {
+    background-color: blue;
+    border-radius: 0;
+    left: 0;
+  }
+  30% {
+    background-color: rgb(5, 5, 182);
+    border-radius: 0;
+    left: 500px;
+    top: 0;
+  }
+  62% {
+    background-color: rgb(2, 2, 64);
+    border-radius: 0;
+    left: 500px;
+    top: 500px;
+  }
+  82% {
+    background-color: rgb(175, 5, 90);
+    border-radius: 0;
+    left: 0;
+    top: 500px;
+  }
+  100% {
+    background-color: rgb(245, 6, 125);
+    border-radius: 0;
+    left: 0;
+    top: 0;
+  }
+}
+.simple {
+  width: 250px;
+  height: 250px;
+  /* background-color: gray; */
+  background-color: yellow;
+  border-radius: 100%;
+  left: 500px;
+  position: relative;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name: example; */
+  animation-name: pro;
+  animation-duration: 2s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+}
+.simple.second {
+  animation-delay: 10s;
+  animation-direction: reverse;
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 1800px;
+  }
+}
+.animatio-type > div {
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(54, 74, 11);
+  position: relative;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.linear {
+  animation-timing-function: linear;
+}
+.ease {
+  animation-timing-function: ease;
+}
+.ease-in {
+  animation-timing-function: ease-in;
+}
+.ease-out {
+  animation-timing-function: ease-out;
+}
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+.custom {
+  animation-timing-function: cubic-bezier(0.05, 1.83, 1, -0.97);
+}

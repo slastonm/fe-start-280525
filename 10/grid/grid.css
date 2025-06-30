@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.i-grid {
+  display: inline-grid;
+}
+.grid {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 150px 250px 350px;
+  /* grid-template-columns: 15% 25% 60%; */
+  /* grid-template-columns: 100% 250px;  не рекомендую*/
+  /* grid-template-columns: auto 250px; */
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  /* grid-template-columns: repeat(4, auto 20px); */
+  /* grid-template-columns: minmax(100px, 1fr) 3fr; */
+  /* grid-template-columns: repeat(3, minmax(100px, 1fr)); */
+  justify-content: center;
+  /* justify-content: flex-start;  error !!!!!*/
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly; */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: stretch; */
+  /* align-items: center; */
+
+  /* row */
+  grid-template-rows: 150px 450px;
+  /* gap */
+  /* column-gap: 50px;
+  row-gap: 50px; */
+}
+.item {
+  padding: 20px;
+  background-color: gray;
+  text-align: center;
+}
+
+.grid div:nth-child(1) {
+  background-color: blue;
+}
+.grid div:nth-child(2) {
+  background-color: yellow;
+  justify-self: start;
+  align-self: center;
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+}
+.grid div:nth-child(3) {
+  background-color: green;
+}
+.grid div:nth-child(4) {
+  background-color: orange;
+}
+.grid div:nth-child(5) {
+  background-color: red;
+}
+.grid div:nth-child(6) {
+  background-color: palevioletred;
+  justify-self: end;
+  align-self: end;
+}
+
+.area {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 100px 1fr 150px;
+  grid-template-areas:
+    "top top top"
+    "left main right-side"
+    "bottom bottom bottom";
+}
+header {
+  background-color: black;
+  color: white;
+  grid-area: top;
+}
+aside {
+  background-color: orange;
+  grid-area: left;
+}
+main {
+  background-color: brown;
+  grid-area: main;
+}
+nav {
+  background-color: gray;
+  grid-area: right-side;
+}
+footer {
+  background-color: green;
+  grid-area: bottom;
+}
+
+@media (max-width: 800px) {
+  .area {
+    grid-template-areas:
+      "top top top"
+      "left main main"
+      "left right-side right-side"
+      "left bottom bottom";
+  }
+}
+
+@media (max-width: 800px) {
+  .area {
+    grid-template-areas:
+      "left top top"
+      "left bottom bottom"
+      "left main main"
+      "left right-side right-side";
+  }
+}
+header {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+footer {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}

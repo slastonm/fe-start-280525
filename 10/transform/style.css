@@ -1,0 +1,42 @@
+button {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 3px solid black;
+  transition: all 1.5s;
+  margin-top: 100px;
+}
+button:hover {
+  background-color: yellow;
+  color: black;
+  /* transition: all 2s; */
+}
+.rotate:hover {
+  /* rotate: 45deg; */
+  /* rotate: -45deg; */
+  transform: rotate(290deg);
+}
+.scale:hover {
+  /* font-size: 40px;
+  padding: 40px 80px; */
+  /* scale: 2 2; */
+  /* scale: 2 1.2; */
+  /* scale: 0.7; */
+  transform: scale(0.7, 3);
+}
+
+.translate:hover {
+  /* translate: 40px 10px; */
+  transform: translate(-40px, -10px);
+}
+
+.skew:hover {
+  transform: skew(45deg, 10deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.combine:hover {
+  transform: rotate(30deg) scale(1.5) translate(-50px, 20px) skew(30deg, 0);
+}
